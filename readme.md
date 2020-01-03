@@ -20,18 +20,17 @@ git clone https://github.com/rgomez96/Warframe-Linux-Setup
 cd Warframe-Linux-Setup
 ```
 
-after that, this script will require permission to execute, use the following
-command:
+after that, this script will require permission to execute. I prepared 3 versions of the script: one for Arch distros and derivatives, other for Debian/Ubuntu/POP_OS and other Debian derivatives and a version that won't install xboxdrv if you intend to play with a controller
 
 ```
-chmod +x setupwarframe.sh
+chmod +x setupwarframeWhateverVersionyouneed.sh
 ```
 
 Check the prerrequisites section to see if you have all the packages required
 to run this script and finally, execute it:
 
 ```
-./setupwarframe.sh
+./setupwarframeWhateverVersionyouneed.sh
 ```
 
 ### Prerrequisites
