@@ -60,7 +60,7 @@ a hardware fail error and i'm redirected to this page** (https://www.warframe.co
 
 I'm not sure what really causes this error. I used to get that when i used
 Manjaro through a full installation instead of a minimal version through the
-architect installer.
+architect installer so i dont know. Install another distro? Maybe get a minimal install?
 
 **What if i dont want to play on Steam? I'd rather have the standalone
 launcher**
