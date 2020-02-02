@@ -45,15 +45,14 @@ echo "File succesfully extracted. To play Warframe make sure to click on propert
 
 echo "Setting xboxdrv now"
 
-wget -nv --show-progress https://aur.archlinux.org/cgit/aur.git/snapshot/xboxdrv.tar.gz
+curl -O https://gist.githubusercontent.com/xarvh/6abfbd176a48e21886813e98480e9dc5/raw/96642aeea1a1f59d9f59cff5b6ecbb20362fdfd3/xboxdrv.service
 
-tar -xzf xboxdrv.tar.gz
+sudo eopkg install xboxdrv
 
-cd xboxdrv
+sudo mv xboxdrv.service /etc/systemd/system
 
-makepkg -csi
+sudo systemctl enable xboxdrv
 
-sudo systemctl daemon-reload
+sudo systemctl start xboxdrv
 
-sudo systemctl enable --now xboxdrv
 

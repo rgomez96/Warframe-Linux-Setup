@@ -13,13 +13,14 @@ echo "Latest version link: " $link
 #Now we have the release link but we have to obtain the download link of the
 #file. Since we know its a tar.gz link and it has to contain the version name
 #we look for that.
-lookfor=$(echo $link | cut -d\/ -f8)".tar.gz"
+lookfor=$(echo $link | cut -d\/ -f8)
 
 echo "We are looking for: " $lookfor
 
 #Generate a download link
 download=https://github.com/
-download+=$(curl -s $link | grep -i $lookfor | grep -i releases | cut -d\" -f2)
+download+=$(curl -s $link | grep -i $lookfor | grep -i tar.gz | grep -i releases | cut -d\" -f2)
+
 
 echo "Download link: " $download
 

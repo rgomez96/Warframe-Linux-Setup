@@ -58,9 +58,7 @@ sudo apt install git curl wget tar
 **I installed everything correctly, but when i'm playing i randomly get
 a hardware fail error and i'm redirected to this page** (https://www.warframe.com/en/hardwarefail).
 
-I'm not sure what really causes this error. I used to get that when i used
-Manjaro through a full installation instead of a minimal version through the
-architect installer.
+This can happen because you have an incorrect version of the NVIDIA driver. I had this problem using Manjaro because i needed the nvidia_440x driver and Manjaro installed nvidia_418x. 
 
 **What if i dont want to play on Steam? I'd rather have the standalone
 launcher**
@@ -72,7 +70,7 @@ their site for more info.
 No, you can execute setupwarframeNOXBOXDRV.sh, which will only download and
 extract GloriousEggroll's proton if you wish.
 
-**What if i use a non Debian or Arch distro?**
+**What if i use a non Debian/Arch/SUSE/Solus distro?**
 
 You can download and extract GloriousEggroll's proton using
 setupwarframeNOXBOXDRV.sh, but you will have to find your way to install

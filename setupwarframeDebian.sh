@@ -15,11 +15,14 @@ echo "Latest version link: " $link
 #we look for that.
 lookfor=$(echo $link | cut -d\/ -f8)".tar.gz"
 
+lookfor=$(echo $link | cut -d\/ -f8)
+
 echo "We are looking for: " $lookfor
 
 #Generate a download link
 download=https://github.com/
-download+=$(curl -s $link | grep -i $lookfor | grep -i releases | cut -d\" -f2)
+download+=$(curl -s $link | grep -i $lookfor | grep -i tar.gz | grep -i releases | cut -d\" -f2)
+
 
 echo "Download link: " $download
 
