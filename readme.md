@@ -82,6 +82,6 @@ https://github.com/lutris/lutris/wiki/Installing-drivers
 
 (i just copied that part from Lutris' website haha)
 
-##Acknowledgements
+## Acknowledgements
 
 - GloriousEggrolls' custom proton version: https://github.com/GloriousEggroll/proton-ge-custom
