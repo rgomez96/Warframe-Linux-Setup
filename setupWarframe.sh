@@ -41,4 +41,7 @@ echo "Extracting the file $filename, might take just a little while."
 
 tar -C ~/.steam/root/compatibilitytools.d -zxf $filename
 
+echo "Removing now unnecesary tar file from the system"
+rm -f $filename
+
 echo "File succesfully extracted. To play Warframe make sure to click on properties and make it use GE custom proton version"
