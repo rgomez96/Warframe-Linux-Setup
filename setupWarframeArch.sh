@@ -45,4 +45,20 @@ echo "Removing the .tar file since its no longer needed"
 
 rm -f $filename
 
-echo "File succesfully extracted. To play Warframe make sure to click on properties and make it use GE custom proton version"
+echo "Downloading xboxdrv and setting it as a fake controller."
+
+wget -nv --show-progress https://aur.archlinux.org/cgit/aur.git/snapshot/xboxdrv.tar.gz
+
+tar -zxf xboxdrv.tar.gz
+
+cd xboxdrv
+
+makepkg -csi
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable --now xboxdrv
+
+rm -rf xboxdrv xboxdrv.tar.gz
+
+echo "Everything is done. To play Warframe make sure to click on properties and make it use GE custom proton version"

@@ -5,7 +5,9 @@ proton version from his repository
 /HOME/user/.steam/root/compatibilitytools.d , leaving it ready to be used on
 steam for playing Warframe (and other titles that may require it).
 
-It WON'T download xboxdrv since release Proton-5.1-GE-2, as its no longer necessary.
+It wasn't necessary to use xboxdrv since Proton-5.1-GE-2, but my testing on
+Proton-5.4-GE-1 tells me the controller bug is back again. So the custom
+scripts to install xboxdrv as a fake controller are back.
 
 ## Getting Started
 
@@ -16,20 +18,20 @@ Just download the repository and enter the folder.
 
 ```
 git clone https://github.com/rgomez96/Warframe-Linux-Setup
-cd Warframe-Linux-Setup
+cd Warframe-Linux-SetupYourDistro.sh
 ```
 
 after that, this script will require permission to execute.
 
 ```
-chmod +x setupwarframe.sh
+chmod +x setupwarframeYourDistro.sh
 ```
 
 Check the prerrequisites section to see if you have all the packages required
 to run this script and finally, execute it:
 
 ```
-./setupwarframe.sh
+./setupwarframeYourDistro.sh
 ```
 
 ### Prerrequisites
@@ -62,9 +64,11 @@ launcher**
 Don't worry, [Lutris gotcha covered](https://lutris.net/games/warframe/), check
 their site for more info.
 
-**What if i use a non Debian/Arch/SUSE/Solus distro?**
+**What if i use a non Debian/Arch/SUSE/ distro?**
 
 You should have no problem as long as you have your proper drivers installed.
+Aside from that, the only real difference between the scripts is the line that
+installs xboxdrv. Check if your distro can install xboxdrv.
 
 **The launcher says it no longer provides support for DirectX9, what do i do?**
 If you get DirectX errors, it means you're missing 32 bit vulkan libraries and/or 32 bit graphic drivers. You need both 32 bit and 64 bit vulkan libraries installed on your system. The reason is because the game is 64 bit but the launcher is 32 bit so the launcher checks for 32 bit. See:
