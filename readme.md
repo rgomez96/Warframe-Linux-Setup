@@ -1,3 +1,6 @@
+# DEPRECATED
+The work of proton-ge on warframe was merged into valve's proton so this installer is mostly useless now.
+
 # Warframe Proton Setup On Linux
 This is a small shell script that will download the latest GloriousEggroll
 proton version from his repository
